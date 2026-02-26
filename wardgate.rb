@@ -5,21 +5,21 @@
 class Wardgate < Formula
   desc "API gateway for AI agents - conclave executor"
   homepage "https://github.com/wardgate/wardgate"
-  version "0.15.0"
+  version "0.16.0"
   license "AGPL-3.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/wardgate/wardgate/releases/download/v0.15.0/wardgate-exec_0.15.0_darwin_amd64.tar.gz"
-      sha256 "f6655604d95d8d2ea68f8a619c3bb04d492db96f39f625d865acfa7fc296305c"
+      url "https://github.com/wardgate/wardgate/releases/download/v0.16.0/wardgate-exec_0.16.0_darwin_amd64.tar.gz"
+      sha256 "a16bc964d39f603563b49e264c2aa3fa0552279203c50421ee69bbca2c016081"
 
       define_method(:install) do
         bin.install "wardgate-exec"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/wardgate/wardgate/releases/download/v0.15.0/wardgate-exec_0.15.0_darwin_arm64.tar.gz"
-      sha256 "5545c073de2c5b4657fa6ee6f8920b27a5c929264f872550d7893fedfe0cb10a"
+      url "https://github.com/wardgate/wardgate/releases/download/v0.16.0/wardgate-exec_0.16.0_darwin_arm64.tar.gz"
+      sha256 "f997e2ddb202baea1e02b4b5ffa6b5cb78f5df8cecb11762a90f3843d99beae1"
 
       define_method(:install) do
         bin.install "wardgate-exec"
@@ -29,15 +29,15 @@ class Wardgate < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/wardgate/wardgate/releases/download/v0.15.0/wardgate-exec_0.15.0_linux_amd64.tar.gz"
-      sha256 "d60f8534ca07f42c2104899e9816f2635db94cc164505cddfe3b930b2366cc97"
+      url "https://github.com/wardgate/wardgate/releases/download/v0.16.0/wardgate-exec_0.16.0_linux_amd64.tar.gz"
+      sha256 "f1786c9a60f2678a032f7bd9a210d7e17c90e2508e233f8c3f471d1d80a6c09b"
       define_method(:install) do
         bin.install "wardgate-exec"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/wardgate/wardgate/releases/download/v0.15.0/wardgate-exec_0.15.0_linux_arm64.tar.gz"
-      sha256 "bfa049a32f8f7b724fe7deb5f4b3872e3051bd98c68a6d3358c5df785bf9fd36"
+      url "https://github.com/wardgate/wardgate/releases/download/v0.16.0/wardgate-exec_0.16.0_linux_arm64.tar.gz"
+      sha256 "236e052ba562aaa3742ba97d366b6fabba2322cfa6cbf56d238593313bd8cd5f"
       define_method(:install) do
         bin.install "wardgate-exec"
       end

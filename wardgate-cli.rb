@@ -5,21 +5,21 @@
 class WardgateCli < Formula
   desc "API gateway for AI agents - CLI client"
   homepage "https://github.com/wardgate/wardgate"
-  version "0.17.1"
+  version "0.18.0"
   license "AGPL-3.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/wardgate/wardgate/releases/download/v0.17.1/wardgate-cli_0.17.1_darwin_amd64.tar.gz"
-      sha256 "b8b7c9b30e5a8f807d58502ff0f160d5e8eec02c5f202a4377759828b5927ab4"
+      url "https://github.com/wardgate/wardgate/releases/download/v0.18.0/wardgate-cli_0.18.0_darwin_amd64.tar.gz"
+      sha256 "932d388794a54e9d55c02ae5ae63197332c73702b90bc42e84373d7a8dbec037"
 
       define_method(:install) do
         bin.install "wardgate-cli"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/wardgate/wardgate/releases/download/v0.17.1/wardgate-cli_0.17.1_darwin_arm64.tar.gz"
-      sha256 "acf594497f81bba3146f3b77220dcf8f8906e6e46b0554e67b1f6f898a45c0e7"
+      url "https://github.com/wardgate/wardgate/releases/download/v0.18.0/wardgate-cli_0.18.0_darwin_arm64.tar.gz"
+      sha256 "6406f0a374761f073e415d340f61fd52f9c8a6a8a82b0d3790a21034cb1138db"
 
       define_method(:install) do
         bin.install "wardgate-cli"
@@ -29,15 +29,15 @@ class WardgateCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/wardgate/wardgate/releases/download/v0.17.1/wardgate-cli_0.17.1_linux_amd64.tar.gz"
-      sha256 "d34a415a5008e42018e012105663f279c4ad33df0a725a76189d7a4efeb2fb1f"
+      url "https://github.com/wardgate/wardgate/releases/download/v0.18.0/wardgate-cli_0.18.0_linux_amd64.tar.gz"
+      sha256 "f704e098068aa1cd6f4dd40da3842094182af215d33e98a37ef778a1d72347fa"
       define_method(:install) do
         bin.install "wardgate-cli"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/wardgate/wardgate/releases/download/v0.17.1/wardgate-cli_0.17.1_linux_arm64.tar.gz"
-      sha256 "2cfeef3e205b34ffd1a9ec5d39ff3fdf65351995b9421193dd09e9ba8acfcd0e"
+      url "https://github.com/wardgate/wardgate/releases/download/v0.18.0/wardgate-cli_0.18.0_linux_arm64.tar.gz"
+      sha256 "765e68d4fe8872e2593684479b1b67503950fff4b962365422f6e3cb85c6b2af"
       define_method(:install) do
         bin.install "wardgate-cli"
       end
